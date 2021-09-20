@@ -1,0 +1,207 @@
+
+
+ default:
+ MULTINOMIALNB:               precision    recall  f1-score   support
+
+           0       0.91      0.90      0.91       175
+           1       0.88      0.94      0.91       234
+           2       0.89      0.79      0.83       219
+           3       0.70      0.85      0.77       207
+           4       0.82      0.67      0.74       217
+           5       0.83      0.58      0.68       179
+           6       0.84      0.84      0.84       178
+           7       0.89      0.73      0.80       205
+           8       0.61      0.66      0.63       192
+           9       0.60      0.86      0.70       194
+
+    accuracy                           0.78      2000
+   macro avg       0.80      0.78      0.78      2000
+weighted avg       0.80      0.78      0.78      2000
+
+
+ default:
+ GAUSSIANNB:               precision    recall  f1-score   support
+
+           0       0.72      0.91      0.80       175
+           1       0.59      0.98      0.74       234
+           2       0.87      0.30      0.44       219
+           3       0.77      0.29      0.43       207
+           4       0.73      0.18      0.28       217
+           5       0.71      0.09      0.17       179
+           6       0.64      0.82      0.72       178
+           7       0.85      0.33      0.47       205
+           8       0.27      0.50      0.35       192
+           9       0.36      0.92      0.52       194
+
+    accuracy                           0.53      2000
+   macro avg       0.65      0.53      0.49      2000
+weighted avg       0.65      0.53      0.49      2000
+
+
+ default:
+ BERNOULLINB:               precision    recall  f1-score   support
+
+           0       0.88      0.89      0.88       175
+           1       0.87      0.97      0.91       234
+           2       0.92      0.79      0.85       219
+           3       0.67      0.81      0.74       207
+           4       0.82      0.76      0.79       217
+           5       0.71      0.60      0.65       179
+           6       0.83      0.79      0.81       178
+           7       0.88      0.76      0.81       205
+           8       0.73      0.63      0.68       192
+           9       0.63      0.84      0.72       194
+
+    accuracy                           0.79      2000
+   macro avg       0.79      0.78      0.78      2000
+weighted avg       0.80      0.79      0.79      2000
+
+
+ default:
+ MULTINOMIALNB:               precision    recall  f1-score   support
+
+           0       0.91      0.90      0.91       175
+           1       0.88      0.94      0.91       234
+           2       0.89      0.79      0.83       219
+           3       0.70      0.85      0.77       207
+           4       0.82      0.67      0.74       217
+           5       0.83      0.58      0.68       179
+           6       0.84      0.84      0.84       178
+           7       0.89      0.73      0.80       205
+           8       0.61      0.66      0.63       192
+           9       0.60      0.86      0.70       194
+
+    accuracy                           0.78      2000
+   macro avg       0.80      0.78      0.78      2000
+weighted avg       0.80      0.78      0.78      2000
+
+
+ default:
+ GAUSSIANNB:               precision    recall  f1-score   support
+
+           0       0.72      0.91      0.80       175
+           1       0.59      0.98      0.74       234
+           2       0.87      0.30      0.44       219
+           3       0.77      0.29      0.43       207
+           4       0.73      0.18      0.28       217
+           5       0.71      0.09      0.17       179
+           6       0.64      0.82      0.72       178
+           7       0.85      0.33      0.47       205
+           8       0.27      0.50      0.35       192
+           9       0.36      0.92      0.52       194
+
+    accuracy                           0.53      2000
+   macro avg       0.65      0.53      0.49      2000
+weighted avg       0.65      0.53      0.49      2000
+
+
+ default:
+ BERNOULLINB:               precision    recall  f1-score   support
+
+           0       0.88      0.89      0.88       175
+           1       0.87      0.97      0.91       234
+           2       0.92      0.79      0.85       219
+           3       0.67      0.81      0.74       207
+           4       0.82      0.76      0.79       217
+           5       0.71      0.60      0.65       179
+           6       0.83      0.79      0.81       178
+           7       0.88      0.76      0.81       205
+           8       0.73      0.63      0.68       192
+           9       0.63      0.84      0.72       194
+
+    accuracy                           0.79      2000
+   macro avg       0.79      0.78      0.78      2000
+weighted avg       0.80      0.79      0.79      2000
+
+
+ default:
+ MULTINOMIALNB:               precision    recall  f1-score   support
+
+           0       0.91      0.90      0.91       175
+           1       0.88      0.94      0.91       234
+           2       0.89      0.79      0.83       219
+           3       0.70      0.85      0.77       207
+           4       0.82      0.67      0.74       217
+           5       0.83      0.58      0.68       179
+           6       0.84      0.84      0.84       178
+           7       0.89      0.73      0.80       205
+           8       0.61      0.66      0.63       192
+           9       0.60      0.86      0.70       194
+
+    accuracy                           0.78      2000
+   macro avg       0.80      0.78      0.78      2000
+weighted avg       0.80      0.78      0.78      2000
+
+
+ default:
+ GAUSSIANNB:               precision    recall  f1-score   support
+
+           0       0.72      0.91      0.80       175
+           1       0.59      0.98      0.74       234
+           2       0.87      0.30      0.44       219
+           3       0.77      0.29      0.43       207
+           4       0.73      0.18      0.28       217
+           5       0.71      0.09      0.17       179
+           6       0.64      0.82      0.72       178
+           7       0.85      0.33      0.47       205
+           8       0.27      0.50      0.35       192
+           9       0.36      0.92      0.52       194
+
+    accuracy                           0.53      2000
+   macro avg       0.65      0.53      0.49      2000
+weighted avg       0.65      0.53      0.49      2000
+
+
+ default:
+ BERNOULLINB:               precision    recall  f1-score   support
+
+           0       0.88      0.89      0.88       175
+           1       0.87      0.97      0.91       234
+           2       0.92      0.79      0.85       219
+           3       0.67      0.81      0.74       207
+           4       0.82      0.76      0.79       217
+           5       0.71      0.60      0.65       179
+           6       0.83      0.79      0.81       178
+           7       0.88      0.76      0.81       205
+           8       0.73      0.63      0.68       192
+           9       0.63      0.84      0.72       194
+
+    accuracy                           0.79      2000
+   macro avg       0.79      0.78      0.78      2000
+weighted avg       0.80      0.79      0.79      2000
+
+
+
+
+
+y_counts:  [1001. 1127.  991. 1032.  980.  863. 1014. 1070.  944.  978.] 10000.0
+
+Probability for Class 0: 10.01 %
+Probability for Class 1: 11.27 %
+Probability for Class 2: 9.91 %
+Probability for Class 3: 10.32 %
+Probability for Class 4: 9.80 %
+Probability for Class 5: 8.63 %
+Probability for Class 6: 10.14 %
+Probability for Class 7: 10.70 %
+Probability for Class 8: 9.44 %
+Probability for Class 9: 9.78 %
+
+
+\begin{table}[htbp] 
+        \centering 
+        \begin{tabular}{c c c c }
+        \hline
+        & Gaussian Naive Bayes & Bernoulli Naive Bayes & Pixel\\
+        \hline
+        Normal & 12 \%	& 66 \%  & 100\\ 
+        Zoom & 14 \%	& 10 \% & 100\\
+        Filter & 11 \%	& 11 \%  & 100\\ 
+        \hline
+        Normal & 11 \%	& 26 \%  & 200\\ 
+        Zoom & 13 \%	& 10 \% & 200\\
+        Filter & 11 \%	& 11 \%  & 200\\ 
+        \end{tabular} 
+        \caption[Tabelle]{Accuracy Naive Bayes Klassifizierer auf durch Rauschen manipuliertem Datensatz} 
+        \label{tab:toll1} 
+        \end{table}
