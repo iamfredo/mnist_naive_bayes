@@ -146,13 +146,16 @@ test_dirty = dirtyMNIST(X_test_2d[:2000], scale=100)
 plt.imshow(test_dirty[0])
 plt.show()
 test_dirty = np.array(test_dirty).reshape(2000, 784)
-train_test_data("Bildrauschen 100 Pixel", methods, X_train_1d[:10000], y_train[:10000], test_dirty, y_test[:2000])
+#train_test_data("Bildrauschen 100 Pixel", methods, X_train_1d[:10000], y_train[:10000], test_dirty, y_test[:2000])
 
 ### Bildrauschen Blur Filter - ROW+COL
 # Noise Injection on Test Data
 test_dirty = dirtyMNIST(X_test_2d[:2000], scale=100)
 test_dirty = np.array(test_dirty) #.reshape(20, 784)
 test_blur_filter, train_blur_filter = row_column_blur(test_dirty, X_train_2d[:10000])
+plt.imshow(test_blur_filter[0])
+plt.show()
+"""
 train_test_data("Bildrauschen 100 Pixel - Blur Filter Row+Col", [naive_bayes.GaussianNB, naive_bayes.BernoulliNB], train_blur_filter, y_train[:10000], test_blur_filter, y_test[:2000])
 
 ### Zoom in
@@ -182,3 +185,4 @@ test_dirty = dirtyMNIST(X_test_2d[:2000], scale=200)
 X_train_crop = zoom_in(X_train_2d[:10000]).reshape(10000, 400)
 X_test_dirty_crop = zoom_in(test_dirty).reshape(2000, 400)
 train_test_data("Bildrauschen 200 Pixel ZOOM IN", methods, X_train_crop, y_train[:10000], X_test_dirty_crop, y_test[:2000])
+"""
