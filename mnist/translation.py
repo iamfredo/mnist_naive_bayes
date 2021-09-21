@@ -313,7 +313,7 @@ methods = [naive_bayes.GaussianNB, naive_bayes.BernoulliNB]
 
 
 
-
+"""
 ############ AUSWERTUNG #############
 
 ### SHIFT DEFAULT - 3 Pixel ###
@@ -481,3 +481,20 @@ test_shift = shift(X_test_2d[:2000], scale=6, vertical=True)
 test_rotated = np.array(test_shift).reshape(2000, 784)
 test, train = count(test_rotated[:2000], X_train_1d[:10000])
 train_test_data("Shift VERTIAL 6 - NAIVE", methods, train[:10000], y_train[:10000], test, y_test[:2000])
+"""
+
+### SHIFT DEFAULT - 3 Pixel ###
+norm = X_test_2d[2]
+test_shift3 = shift(X_test_2d[:2].copy(), scale=3)
+test_shift6 = shift(X_test_2d[:2].copy(), scale=6)
+test_shiftv6 = shift(X_test_2d[:2].copy(), scale=6, vertical=True)
+
+
+import matplotlib.pyplot as plt
+
+fig, axes = plt.subplots(nrows=1, ncols=3, figsize=(5, 3))
+plt.imshow(norm, cmap="gray", axes=0)
+plt.imshow(test_shift3, cmap="gray", axes=1)
+plt.imshow(test_shift6, cmap="gray", axes=2)
+
+fig.tight_layout()
