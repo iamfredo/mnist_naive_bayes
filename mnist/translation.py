@@ -313,9 +313,9 @@ methods = [naive_bayes.GaussianNB, naive_bayes.BernoulliNB]
 
 
 
-"""
-############ AUSWERTUNG #############
 
+############ AUSWERTUNG #############
+"""
 ### SHIFT DEFAULT - 3 Pixel ###
 test_shift = shift(X_test_2d[:2000], scale=3)
 test_shift = np.array(test_shift).reshape(2000, 784)
@@ -332,7 +332,7 @@ train_shift_distances2 = add_euclidean_dist_count(train_distances)
 test_shift_distances2 = add_euclidean_dist_count(test_shift_distances)
 train_test_data("Shift 3 Pixel EUKLID + DISTANZ COUNT", methods, train_shift_distances2, y_train[:10000], test_shift_distances2,
                 y_test[:2000])
-
+"""
 ### FILTER
 ### ROW FILTER
 test_shift = shift(X_test_2d[:2000], scale=3)
@@ -340,7 +340,7 @@ test_shift = np.array(test_shift)  # .reshape(2000, 784)
 test_row_filter, train_row_filter = rowblur(test_shift, X_train_2d[:10000])
 train_test_data("Shift 3 Pixel ROW FILTER", [naive_bayes.GaussianNB, naive_bayes.BernoulliNB], train_row_filter,
                 y_train[:10000], test_row_filter, y_test[:2000])
-
+"""
 ### COL FILTER
 test_col_filter, train_col_filter = columnblur(test_shift, X_train_2d[:10000])
 train_test_data("Shift 3 Pixel COL FILTER", [naive_bayes.GaussianNB, naive_bayes.BernoulliNB], train_col_filter,
@@ -385,7 +385,7 @@ train_shift_distances2 = add_euclidean_dist_count(train_distances)
 test_shift_distances2 = add_euclidean_dist_count(test_shift_distances)
 train_test_data("Shift 6 Pixel EUKLID + DISTANZ COUNT", methods, train_shift_distances2, y_train[:10000], test_shift_distances2,
                 y_test[:2000])
-
+"""
 ### FILTER
 ### ROW FILTER
 test_shift = shift(X_test_2d[:2000], scale=6)
@@ -393,7 +393,7 @@ test_shift = np.array(test_shift)  # .reshape(2000, 784)
 test_row_filter, train_row_filter = rowblur(test_shift, X_train_2d[:10000])
 train_test_data("Shift 6 Pixel ROW FILTER", [naive_bayes.GaussianNB, naive_bayes.BernoulliNB], train_row_filter,
                 y_train[:10000], test_row_filter, y_test[:2000])
-
+"""
 ### COL FILTER
 test_col_filter, train_col_filter = columnblur(test_shift, X_train_2d[:10000])
 train_test_data("Shift 6 Pixel COL FILTER", [naive_bayes.GaussianNB, naive_bayes.BernoulliNB], train_col_filter,
@@ -421,7 +421,6 @@ train_test_data("Shift 6 Pixel ZOOM IN", methods, X_train_crop, y_train[:10000],
 
 
 
-import matplotlib.pyplot as plt
 ### SHIFT VERTIKAL DEFAULT - 6 Pixel ###
 test_shift = shift(X_test_2d[:2000], scale=6, vertical=True)
 test_shift = np.array(test_shift).reshape(2000, 784)
@@ -466,12 +465,8 @@ train_test_data("Shift 6 Pixel VERTIKAL - KREISFILTER", [naive_bayes.GaussianNB,
 
 ### Zoom in
 test_shift = shift(X_test_2d[:2000], scale=6, vertical=True)
-plt.imshow(test_shift[3])
-plt.show()
 X_train_crop = zoom_in(X_train_2d[:10000]).reshape(10000, 400)
 X_test_shift_crop = zoom_in(test_shift).reshape(2000, 400)
-plt.imshow(X_test_shift_crop[3].reshape((20,20)))
-plt.show()
 train_test_data("TEST Shift 6 Pixel VERTIKAL - ZOOM IN", methods, X_train_crop, y_train[:10000], X_test_shift_crop, y_test[:2000])
 
 
@@ -482,7 +477,7 @@ test_rotated = np.array(test_shift).reshape(2000, 784)
 test, train = count(test_rotated[:2000], X_train_1d[:10000])
 train_test_data("Shift VERTIAL 6 - NAIVE", methods, train[:10000], y_train[:10000], test, y_test[:2000])
 """
-
+"""
 ### SHIFT DEFAULT - 3 Pixel ###
 norm = X_test_2d[2]
 test_shift3 = shift(X_test_2d[:2].copy(), scale=3)
@@ -490,11 +485,9 @@ test_shift6 = shift(X_test_2d[:2].copy(), scale=6)
 test_shiftv6 = shift(X_test_2d[:2].copy(), scale=6, vertical=True)
 
 
-import matplotlib.pyplot as plt
-
 fig, axes = plt.subplots(nrows=1, ncols=3, figsize=(5, 3))
 plt.imshow(norm, cmap="gray", axes=0)
 plt.imshow(test_shift3, cmap="gray", axes=1)
 plt.imshow(test_shift6, cmap="gray", axes=2)
-
 fig.tight_layout()
+"""

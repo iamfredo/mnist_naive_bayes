@@ -271,9 +271,12 @@ methods = [naive_bayes.GaussianNB, naive_bayes.BernoulliNB]
 
 ### Rotation Performance NO Euclidean , angle=90 ###
 test_rotated = rotation(X_test_2d[:2000], angle=90)
+import matplotlib.pyplot as plt
+plt.imshow(test_rotated[4], cmap="gray")
+plt.show()
 test_rotated = np.array(test_rotated).reshape(2000, 784)
-train_test_data("Rotation 90", methods, X_train_1d[:10000], y_train[:10000], test_rotated, y_test[:2000])
-
+# train_test_data("Rotation 90", methods, X_train_1d[:10000], y_train[:10000], test_rotated, y_test[:2000])
+"""
 ### ZEILENFILTER
 test_rotated_row_filter, train_row_filter = rowblur_list(test_rotated, X_train_1d[:10000])
 test_rotated_row_filter = np.array(test_rotated_row_filter).reshape(2000, 784)
@@ -384,3 +387,4 @@ test_rotated = rotation(X_test_2d[:2000], angle=180)
 test_rotated = np.array(test_rotated).reshape(2000, 784)
 test, train = count(test_rotated[:2000], X_train_1d[:10000])
 train_test_data("Rotation 120 - NAIVE", methods, train[:10000], y_train[:10000], test, y_test[:2000])
+"""
